@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\to-do-list",
+    "\\backend\\to-do-list\\src",
+    "\\backend\\to-do-list\\src\\main",
+    "\\frontend",
+    "\\frontend\\public",
+    "\\frontend\\src",
+    "\\frontend\\src\\components",
+    "\\frontend\\src\\components\\auth"
+  ],
+  "SelectedNode": "\\frontend\\src\\components\\auth\\Signin.js",
+  "PreviewInSolutionExplorer": false
+}
