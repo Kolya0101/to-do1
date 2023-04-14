@@ -25,12 +25,12 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
 		const loadData = async () => {
 			let response = null;
 			try {
-				let url = `http://52.3.247.194:3000/api/todo/${pageNumber - 1}/${pageSize}`;
+				let url = `http://54.198.48.236:3000/api/todo/${pageNumber - 1}/${pageSize}`;
 
 				if(filter === 'Completed'){
-					url = `http://52.3.247.194:3000/api/todo/${pageNumber - 1}/${pageSize}?isCompleted=true`;
+					url = `http://54.198.48.236:3000/api/todo/${pageNumber - 1}/${pageSize}?isCompleted=true`;
 				} else if(filter === 'Not Completed'){
-					url = `http://52.3.247.194:3000/api/todo/${pageNumber - 1}/${pageSize}?isCompleted=false`;
+					url = `http://54.198.48.236:3000/api/todo/${pageNumber - 1}/${pageSize}?isCompleted=false`;
 				}
 				
 				response = await axios.get(url, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`,}});
@@ -130,7 +130,7 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
 
 	const markCompleted = async (id) => {
 		try {
-      await axios.put(`http://52.3.247.194:3000/api/todo/${id}/markcomplete`, {}, {
+      await axios.put(`http://54.198.48.236:3000/api/todo/${id}/markcomplete`, {}, {
 				headers: {
 					'Authorization': `Bearer ${sessionStorage.getItem('token')}`
 				}
@@ -149,7 +149,7 @@ function Todos({isAuthenticated, setIsAuthenticated}) {
 
 	const deleteTodo = async (id) => {
 		try {
-      await axios.delete(`http://52.3.247.194:3000/api/todo/${id}`, {
+      await axios.delete(`http://54.198.48.236:3000/api/todo/${id}`, {
 				headers: {
 					'Authorization': `Bearer ${sessionStorage.getItem('token')}`
 				}

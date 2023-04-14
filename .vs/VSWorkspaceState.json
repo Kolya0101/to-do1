@@ -9,7 +9,8 @@
     "\\frontend\\public",
     "\\frontend\\src",
     "\\frontend\\src\\components",
-    "\\frontend\\src\\components\\auth"
+    "\\frontend\\src\\components\\auth",
+    "\\frontend\\src\\components\\todo"
   ],
   "SelectedNode": "\\frontend\\src\\components\\auth\\Signin.js",
   "PreviewInSolutionExplorer": false
