@@ -17,7 +17,7 @@ function Signin({isAuthenticated, setIsAuthenticated}) {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://54.172.145.106:3001/api/auth/signin', {username, password});
+      const response = await axios.post('http://54.172.145.106:3000/api/auth/signin', {username, password});
       sessionStorage.setItem('token', response.data.token);
       sessionStorage.setItem('name', response.data.username);
       setIsAuthenticated(true);
