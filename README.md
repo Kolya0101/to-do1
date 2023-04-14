@@ -18,7 +18,7 @@ Todo list application that can create, read, update, delete, and mark completed.
 
 `mvn spring-boot:run`
 
-4. Open your browser and browse to http://localhost:3000
+4. Open your browser and browse to http://localhost:3001
 
 ### Snapshot of Application
 
